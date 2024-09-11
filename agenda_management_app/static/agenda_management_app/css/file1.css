@@ -1,0 +1,62 @@
+.cbody{
+    width:100%;
+    height:550px;
+    background-image:linear-gradient(to right, pink, purple);
+}
+.cform{
+    width: 450px;
+    height: 450px;
+    background-color: purple;
+    position: relative;
+    left: 450px;
+    top: 50px;
+    border-radius: 1em;
+    margin: 1em;
+    padding: 1em;
+}
+input[type="text"],input[type="submit"]{
+    width: 200px;
+    height: 35px;
+    margin: 20px;
+    padding: 3px;
+    border-radius: 1em;
+    outline: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    color: blueviolet;
+}
+label{
+    color: white;
+}
+input[type="submit"]{
+    position: relative;
+    left: 120px;
+    top: 200px;
+}
+ul li{
+    list-style-type: none;
+    background-color: beige;
+    color: blueviolet;
+    margin: 20px;
+    padding: 20px;
+    width: 200px;
+    border-radius: 1em;
+}
+#btn-delete-agendas{
+    text-decoration: none;
+    width: 200px;
+    height: 35px;
+    margin: 20px;
+    padding: 3px;
+    border-radius: 1em;
+    outline: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    color: blueviolet;
+    position: relative;
+    left: 50px;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Add Agenda</title>
+
+{% load static  %}
+<link rel="stylesheet" type="text/css"   href="{% static 'agenda_management_app/css/file1.css' %}">
+
+</head>
+<body>
+<div id="agenda_list">
+<ul>
+{% for agenda in agendas  %}
+<li>
+id: {{agenda.id}}
+{{agenda.contact_name}}
+{{agenda.contact_number}}
+<a href="{% url 'edit_agenda' agenda.id %}">Edit Agenda</a> <br/>
+<a href="{% url 'delete_agenda' agenda.id %}">Delete Agenda</a>
+
+</li>
+{% endfor %}
+</ul>
+</div>
+<a id="btn-delete-agendas" href="{% url 'delete_agendas' %}">Delete Agendas</a>
+</body>
+</html>
